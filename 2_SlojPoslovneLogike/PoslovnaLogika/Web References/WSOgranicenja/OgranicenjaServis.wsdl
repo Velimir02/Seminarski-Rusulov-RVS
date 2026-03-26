@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://softverprojekat.rs/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://softverprojekat.rs/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://softverprojekat.rs/">
+      <s:element name="OcenaMin">
+        <s:complexType />
+      </s:element>
+      <s:element name="OcenaMinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OcenaMinResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OcenaMax">
+        <s:complexType />
+      </s:element>
+      <s:element name="OcenaMaxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OcenaMaxResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaOcena">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaOcenaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaOcenaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZabraniBuduciDatum">
+        <s:complexType />
+      </s:element>
+      <s:element name="ZabraniBuduciDatumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ZabraniBuduciDatumResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaDatum">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaDatumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaDatumResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KomentarObavezanZaLoshuOcenu">
+        <s:complexType />
+      </s:element>
+      <s:element name="KomentarObavezanZaLoshuOcenuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KomentarObavezanZaLoshuOcenuResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PragLoseOcene">
+        <s:complexType />
+      </s:element>
+      <s:element name="PragLoseOceneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PragLoseOceneResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaKomentar">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaKomentarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaKomentarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DajPravilaOcenjivanja">
+        <s:complexType />
+      </s:element>
+      <s:element name="DajPravilaOcenjivanjaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DajPravilaOcenjivanjaResult" type="tns:ArrayOfPraviloOcenjivanjaDto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPraviloOcenjivanjaDto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PraviloOcenjivanjaDto" nillable="true" type="tns:PraviloOcenjivanjaDto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PraviloOcenjivanjaDto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Ocena" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Akcija" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Opis" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MinDuzinaLozinke">
+        <s:complexType />
+      </s:element>
+      <s:element name="MinDuzinaLozinkeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MinDuzinaLozinkeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaLozinka">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaLozinkaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaLozinkaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmailObavezan">
+        <s:complexType />
+      </s:element>
+      <s:element name="EmailObavezanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmailObavezanResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DozvoljenDomen">
+        <s:complexType />
+      </s:element>
+      <s:element name="DozvoljenDomenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DozvoljenDomenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaEmail">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaEmailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MaxDuzinaNaziva">
+        <s:complexType />
+      </s:element>
+      <s:element name="MaxDuzinaNazivaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MaxDuzinaNazivaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpisObavezan">
+        <s:complexType />
+      </s:element>
+      <s:element name="OpisObavezanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OpisObavezanResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaNaziv">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaNazivResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaNazivResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="OcenaMinSoapIn">
+    <wsdl:part name="parameters" element="tns:OcenaMin" />
+  </wsdl:message>
+  <wsdl:message name="OcenaMinSoapOut">
+    <wsdl:part name="parameters" element="tns:OcenaMinResponse" />
+  </wsdl:message>
+  <wsdl:message name="OcenaMaxSoapIn">
+    <wsdl:part name="parameters" element="tns:OcenaMax" />
+  </wsdl:message>
+  <wsdl:message name="OcenaMaxSoapOut">
+    <wsdl:part name="parameters" element="tns:OcenaMaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaOcenaSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaOcena" />
+  </wsdl:message>
+  <wsdl:message name="PorukaOcenaSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaOcenaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZabraniBuduciDatumSoapIn">
+    <wsdl:part name="parameters" element="tns:ZabraniBuduciDatum" />
+  </wsdl:message>
+  <wsdl:message name="ZabraniBuduciDatumSoapOut">
+    <wsdl:part name="parameters" element="tns:ZabraniBuduciDatumResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaDatumSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaDatum" />
+  </wsdl:message>
+  <wsdl:message name="PorukaDatumSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaDatumResponse" />
+  </wsdl:message>
+  <wsdl:message name="KomentarObavezanZaLoshuOcenuSoapIn">
+    <wsdl:part name="parameters" element="tns:KomentarObavezanZaLoshuOcenu" />
+  </wsdl:message>
+  <wsdl:message name="KomentarObavezanZaLoshuOcenuSoapOut">
+    <wsdl:part name="parameters" element="tns:KomentarObavezanZaLoshuOcenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="PragLoseOceneSoapIn">
+    <wsdl:part name="parameters" element="tns:PragLoseOcene" />
+  </wsdl:message>
+  <wsdl:message name="PragLoseOceneSoapOut">
+    <wsdl:part name="parameters" element="tns:PragLoseOceneResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaKomentarSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaKomentar" />
+  </wsdl:message>
+  <wsdl:message name="PorukaKomentarSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaKomentarResponse" />
+  </wsdl:message>
+  <wsdl:message name="DajPravilaOcenjivanjaSoapIn">
+    <wsdl:part name="parameters" element="tns:DajPravilaOcenjivanja" />
+  </wsdl:message>
+  <wsdl:message name="DajPravilaOcenjivanjaSoapOut">
+    <wsdl:part name="parameters" element="tns:DajPravilaOcenjivanjaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MinDuzinaLozinkeSoapIn">
+    <wsdl:part name="parameters" element="tns:MinDuzinaLozinke" />
+  </wsdl:message>
+  <wsdl:message name="MinDuzinaLozinkeSoapOut">
+    <wsdl:part name="parameters" element="tns:MinDuzinaLozinkeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaLozinkaSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaLozinka" />
+  </wsdl:message>
+  <wsdl:message name="PorukaLozinkaSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaLozinkaResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmailObavezanSoapIn">
+    <wsdl:part name="parameters" element="tns:EmailObavezan" />
+  </wsdl:message>
+  <wsdl:message name="EmailObavezanSoapOut">
+    <wsdl:part name="parameters" element="tns:EmailObavezanResponse" />
+  </wsdl:message>
+  <wsdl:message name="DozvoljenDomenSoapIn">
+    <wsdl:part name="parameters" element="tns:DozvoljenDomen" />
+  </wsdl:message>
+  <wsdl:message name="DozvoljenDomenSoapOut">
+    <wsdl:part name="parameters" element="tns:DozvoljenDomenResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaEmail" />
+  </wsdl:message>
+  <wsdl:message name="PorukaEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="MaxDuzinaNazivaSoapIn">
+    <wsdl:part name="parameters" element="tns:MaxDuzinaNaziva" />
+  </wsdl:message>
+  <wsdl:message name="MaxDuzinaNazivaSoapOut">
+    <wsdl:part name="parameters" element="tns:MaxDuzinaNazivaResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpisObavezanSoapIn">
+    <wsdl:part name="parameters" element="tns:OpisObavezan" />
+  </wsdl:message>
+  <wsdl:message name="OpisObavezanSoapOut">
+    <wsdl:part name="parameters" element="tns:OpisObavezanResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaNazivSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaNaziv" />
+  </wsdl:message>
+  <wsdl:message name="PorukaNazivSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaNazivResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OgranicenjaServisSoap">
+    <wsdl:operation name="OcenaMin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vraća minimalnu dozvoljenu ocenu.</wsdl:documentation>
+      <wsdl:input message="tns:OcenaMinSoapIn" />
+      <wsdl:output message="tns:OcenaMinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OcenaMax">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vraća maksimalnu dozvoljenu ocenu.</wsdl:documentation>
+      <wsdl:input message="tns:OcenaMaxSoapIn" />
+      <wsdl:output message="tns:OcenaMaxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaOcena">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Poruka ako ocena nije u dozvoljenom rasponu.</wsdl:documentation>
+      <wsdl:input message="tns:PorukaOcenaSoapIn" />
+      <wsdl:output message="tns:PorukaOcenaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZabraniBuduciDatum">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li treba zabraniti odabir datuma u budućnosti za unos ocene?</wsdl:documentation>
+      <wsdl:input message="tns:ZabraniBuduciDatumSoapIn" />
+      <wsdl:output message="tns:ZabraniBuduciDatumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaDatum">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vraća poruku greške ako je izabran datum u budućnosti.</wsdl:documentation>
+      <wsdl:input message="tns:PorukaDatumSoapIn" />
+      <wsdl:output message="tns:PorukaDatumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KomentarObavezanZaLoshuOcenu">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li je obavezno uneti komentar za loše ocene?</wsdl:documentation>
+      <wsdl:input message="tns:KomentarObavezanZaLoshuOcenuSoapIn" />
+      <wsdl:output message="tns:KomentarObavezanZaLoshuOcenuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PragLoseOcene">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Prag ispod koga se ocena smatra lošom i zahteva komentar.</wsdl:documentation>
+      <wsdl:input message="tns:PragLoseOceneSoapIn" />
+      <wsdl:output message="tns:PragLoseOceneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaKomentar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Poruka za obavezan komentar kod loših ocena.</wsdl:documentation>
+      <wsdl:input message="tns:PorukaKomentarSoapIn" />
+      <wsdl:output message="tns:PorukaKomentarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DajPravilaOcenjivanja">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vraća listu pravila za značenje svake ocene i akcije menadžera.</wsdl:documentation>
+      <wsdl:input message="tns:DajPravilaOcenjivanjaSoapIn" />
+      <wsdl:output message="tns:DajPravilaOcenjivanjaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MinDuzinaLozinke">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Minimalna dužina lozinke koju sistem zahteva.</wsdl:documentation>
+      <wsdl:input message="tns:MinDuzinaLozinkeSoapIn" />
+      <wsdl:output message="tns:MinDuzinaLozinkeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaLozinka">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Poruka greške za nevalidnu lozinku.</wsdl:documentation>
+      <wsdl:input message="tns:PorukaLozinkaSoapIn" />
+      <wsdl:output message="tns:PorukaLozinkaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmailObavezan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li je kompanijski email obavezan?</wsdl:documentation>
+      <wsdl:input message="tns:EmailObavezanSoapIn" />
+      <wsdl:output message="tns:EmailObavezanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DozvoljenDomen">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vraća dozvoljeni domen za email, npr. @firma.rs</wsdl:documentation>
+      <wsdl:input message="tns:DozvoljenDomenSoapIn" />
+      <wsdl:output message="tns:DozvoljenDomenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaEmail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Poruka ukoliko email ne ispunjava pravilo domena.</wsdl:documentation>
+      <wsdl:input message="tns:PorukaEmailSoapIn" />
+      <wsdl:output message="tns:PorukaEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MaxDuzinaNaziva">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Maksimalna dozvoljena dužina naziva kriterijuma.</wsdl:documentation>
+      <wsdl:input message="tns:MaxDuzinaNazivaSoapIn" />
+      <wsdl:output message="tns:MaxDuzinaNazivaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpisObavezan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li je opis kriterijuma obavezno polje?</wsdl:documentation>
+      <wsdl:input message="tns:OpisObavezanSoapIn" />
+      <wsdl:output message="tns:OpisObavezanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaNaziv">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Poruka za predugačak naziv kriterijuma.</wsdl:documentation>
+      <wsdl:input message="tns:PorukaNazivSoapIn" />
+      <wsdl:output message="tns:PorukaNazivSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OgranicenjaServisSoap" type="tns:OgranicenjaServisSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OcenaMin">
+      <soap:operation soapAction="http://softverprojekat.rs/OcenaMin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OcenaMax">
+      <soap:operation soapAction="http://softverprojekat.rs/OcenaMax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaOcena">
+      <soap:operation soapAction="http://softverprojekat.rs/PorukaOcena" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZabraniBuduciDatum">
+      <soap:operation soapAction="http://softverprojekat.rs/ZabraniBuduciDatum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaDatum">
+      <soap:operation soapAction="http://softverprojekat.rs/PorukaDatum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KomentarObavezanZaLoshuOcenu">
+      <soap:operation soapAction="http://softverprojekat.rs/KomentarObavezanZaLoshuOcenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PragLoseOcene">
+      <soap:operation soapAction="http://softverprojekat.rs/PragLoseOcene" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaKomentar">
+      <soap:operation soapAction="http://softverprojekat.rs/PorukaKomentar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DajPravilaOcenjivanja">
+      <soap:operation soapAction="http://softverprojekat.rs/DajPravilaOcenjivanja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MinDuzinaLozinke">
+      <soap:operation soapAction="http://softverprojekat.rs/MinDuzinaLozinke" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaLozinka">
+      <soap:operation soapAction="http://softverprojekat.rs/PorukaLozinka" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailObavezan">
+      <soap:operation soapAction="http://softverprojekat.rs/EmailObavezan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DozvoljenDomen">
+      <soap:operation soapAction="http://softverprojekat.rs/DozvoljenDomen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaEmail">
+      <soap:operation soapAction="http://softverprojekat.rs/PorukaEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaxDuzinaNaziva">
+      <soap:operation soapAction="http://softverprojekat.rs/MaxDuzinaNaziva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpisObavezan">
+      <soap:operation soapAction="http://softverprojekat.rs/OpisObavezan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaNaziv">
+      <soap:operation soapAction="http://softverprojekat.rs/PorukaNaziv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OgranicenjaServisSoap12" type="tns:OgranicenjaServisSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OcenaMin">
+      <soap12:operation soapAction="http://softverprojekat.rs/OcenaMin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OcenaMax">
+      <soap12:operation soapAction="http://softverprojekat.rs/OcenaMax" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaOcena">
+      <soap12:operation soapAction="http://softverprojekat.rs/PorukaOcena" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZabraniBuduciDatum">
+      <soap12:operation soapAction="http://softverprojekat.rs/ZabraniBuduciDatum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaDatum">
+      <soap12:operation soapAction="http://softverprojekat.rs/PorukaDatum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KomentarObavezanZaLoshuOcenu">
+      <soap12:operation soapAction="http://softverprojekat.rs/KomentarObavezanZaLoshuOcenu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PragLoseOcene">
+      <soap12:operation soapAction="http://softverprojekat.rs/PragLoseOcene" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaKomentar">
+      <soap12:operation soapAction="http://softverprojekat.rs/PorukaKomentar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DajPravilaOcenjivanja">
+      <soap12:operation soapAction="http://softverprojekat.rs/DajPravilaOcenjivanja" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MinDuzinaLozinke">
+      <soap12:operation soapAction="http://softverprojekat.rs/MinDuzinaLozinke" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaLozinka">
+      <soap12:operation soapAction="http://softverprojekat.rs/PorukaLozinka" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailObavezan">
+      <soap12:operation soapAction="http://softverprojekat.rs/EmailObavezan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DozvoljenDomen">
+      <soap12:operation soapAction="http://softverprojekat.rs/DozvoljenDomen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaEmail">
+      <soap12:operation soapAction="http://softverprojekat.rs/PorukaEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaxDuzinaNaziva">
+      <soap12:operation soapAction="http://softverprojekat.rs/MaxDuzinaNaziva" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpisObavezan">
+      <soap12:operation soapAction="http://softverprojekat.rs/OpisObavezan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaNaziv">
+      <soap12:operation soapAction="http://softverprojekat.rs/PorukaNaziv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OgranicenjaServis">
+    <wsdl:port name="OgranicenjaServisSoap" binding="tns:OgranicenjaServisSoap">
+      <soap:address location="https://localhost:44388/OgranicenjaServis.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OgranicenjaServisSoap12" binding="tns:OgranicenjaServisSoap12">
+      <soap12:address location="https://localhost:44388/OgranicenjaServis.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

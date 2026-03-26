@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlasePodataka", "KlasePodataka.csproj", "{676EBD34-2749-4C9C-9479-16F0C6EC13BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{676EBD34-2749-4C9C-9479-16F0C6EC13BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676EBD34-2749-4C9C-9479-16F0C6EC13BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676EBD34-2749-4C9C-9479-16F0C6EC13BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676EBD34-2749-4C9C-9479-16F0C6EC13BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D629CD97-310E-4BC0-BFC1-4856EF4E793C}
+	EndGlobalSection
+EndGlobal

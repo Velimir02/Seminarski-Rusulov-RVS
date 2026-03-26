@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tvojprojekat.rs/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tvojprojekat.rs/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tvojprojekat.rs/">
+      <s:element name="OpisObavezan">
+        <s:complexType />
+      </s:element>
+      <s:element name="OpisObavezanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OpisObavezanResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaOpis">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaOpisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaOpisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ZabraniBuduciDatum">
+        <s:complexType />
+      </s:element>
+      <s:element name="ZabraniBuduciDatumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ZabraniBuduciDatumResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaDatum">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaDatumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaDatumResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DajSezonskaPravila">
+        <s:complexType />
+      </s:element>
+      <s:element name="DajSezonskaPravilaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DajSezonskaPravilaResult" type="tns:ArrayOfSezonaDto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSezonaDto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SezonaDto" nillable="true" type="tns:SezonaDto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SezonaDto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TipId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Od" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Do" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Opis" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MinimalnaPovrsina">
+        <s:complexType />
+      </s:element>
+      <s:element name="MinimalnaPovrsinaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MinimalnaPovrsinaResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DozvoliPreklapanje">
+        <s:complexType />
+      </s:element>
+      <s:element name="DozvoliPreklapanjeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DozvoliPreklapanjeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaPreklapanje">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaPreklapanjeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaPreklapanjeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FullAmountRequiresAll">
+        <s:complexType />
+      </s:element>
+      <s:element name="FullAmountRequiresAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FullAmountRequiresAllResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObavezneAktivnosti">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObavezneAktivnostiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObavezneAktivnostiResult" type="tns:ArrayOfObaveznaAktivnostDto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfObaveznaAktivnostDto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ObaveznaAktivnostDto" nillable="true" type="tns:ObaveznaAktivnostDto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ObaveznaAktivnostDto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TipId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Naziv" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DelimicnoOdobrenjeDozvoljeno">
+        <s:complexType />
+      </s:element>
+      <s:element name="DelimicnoOdobrenjeDozvoljenoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DelimicnoOdobrenjeDozvoljenoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelimicnoOdobrenjeNacin">
+        <s:complexType />
+      </s:element>
+      <s:element name="DelimicnoOdobrenjeNacinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DelimicnoOdobrenjeNacinResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcenatPoAktivnosti">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProcenatPoAktivnostiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProcenatPoAktivnostiResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PorukaAkoNijePuno">
+        <s:complexType />
+      </s:element>
+      <s:element name="PorukaAkoNijePunoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PorukaAkoNijePunoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="OpisObavezanSoapIn">
+    <wsdl:part name="parameters" element="tns:OpisObavezan" />
+  </wsdl:message>
+  <wsdl:message name="OpisObavezanSoapOut">
+    <wsdl:part name="parameters" element="tns:OpisObavezanResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaOpisSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaOpis" />
+  </wsdl:message>
+  <wsdl:message name="PorukaOpisSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaOpisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ZabraniBuduciDatumSoapIn">
+    <wsdl:part name="parameters" element="tns:ZabraniBuduciDatum" />
+  </wsdl:message>
+  <wsdl:message name="ZabraniBuduciDatumSoapOut">
+    <wsdl:part name="parameters" element="tns:ZabraniBuduciDatumResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaDatumSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaDatum" />
+  </wsdl:message>
+  <wsdl:message name="PorukaDatumSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaDatumResponse" />
+  </wsdl:message>
+  <wsdl:message name="DajSezonskaPravilaSoapIn">
+    <wsdl:part name="parameters" element="tns:DajSezonskaPravila" />
+  </wsdl:message>
+  <wsdl:message name="DajSezonskaPravilaSoapOut">
+    <wsdl:part name="parameters" element="tns:DajSezonskaPravilaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MinimalnaPovrsinaSoapIn">
+    <wsdl:part name="parameters" element="tns:MinimalnaPovrsina" />
+  </wsdl:message>
+  <wsdl:message name="MinimalnaPovrsinaSoapOut">
+    <wsdl:part name="parameters" element="tns:MinimalnaPovrsinaResponse" />
+  </wsdl:message>
+  <wsdl:message name="DozvoliPreklapanjeSoapIn">
+    <wsdl:part name="parameters" element="tns:DozvoliPreklapanje" />
+  </wsdl:message>
+  <wsdl:message name="DozvoliPreklapanjeSoapOut">
+    <wsdl:part name="parameters" element="tns:DozvoliPreklapanjeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaPreklapanjeSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaPreklapanje" />
+  </wsdl:message>
+  <wsdl:message name="PorukaPreklapanjeSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaPreklapanjeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FullAmountRequiresAllSoapIn">
+    <wsdl:part name="parameters" element="tns:FullAmountRequiresAll" />
+  </wsdl:message>
+  <wsdl:message name="FullAmountRequiresAllSoapOut">
+    <wsdl:part name="parameters" element="tns:FullAmountRequiresAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObavezneAktivnostiSoapIn">
+    <wsdl:part name="parameters" element="tns:ObavezneAktivnosti" />
+  </wsdl:message>
+  <wsdl:message name="ObavezneAktivnostiSoapOut">
+    <wsdl:part name="parameters" element="tns:ObavezneAktivnostiResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelimicnoOdobrenjeDozvoljenoSoapIn">
+    <wsdl:part name="parameters" element="tns:DelimicnoOdobrenjeDozvoljeno" />
+  </wsdl:message>
+  <wsdl:message name="DelimicnoOdobrenjeDozvoljenoSoapOut">
+    <wsdl:part name="parameters" element="tns:DelimicnoOdobrenjeDozvoljenoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelimicnoOdobrenjeNacinSoapIn">
+    <wsdl:part name="parameters" element="tns:DelimicnoOdobrenjeNacin" />
+  </wsdl:message>
+  <wsdl:message name="DelimicnoOdobrenjeNacinSoapOut">
+    <wsdl:part name="parameters" element="tns:DelimicnoOdobrenjeNacinResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcenatPoAktivnostiSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcenatPoAktivnosti" />
+  </wsdl:message>
+  <wsdl:message name="ProcenatPoAktivnostiSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcenatPoAktivnostiResponse" />
+  </wsdl:message>
+  <wsdl:message name="PorukaAkoNijePunoSoapIn">
+    <wsdl:part name="parameters" element="tns:PorukaAkoNijePuno" />
+  </wsdl:message>
+  <wsdl:message name="PorukaAkoNijePunoSoapOut">
+    <wsdl:part name="parameters" element="tns:PorukaAkoNijePunoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OgranicenjaServisSoap">
+    <wsdl:operation name="OpisObavezan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li je opis obavezan za unos aktivnosti (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:OpisObavezanSoapIn" />
+      <wsdl:output message="tns:OpisObavezanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaOpis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tekst poruke za obavezan opis (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:PorukaOpisSoapIn" />
+      <wsdl:output message="tns:PorukaOpisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZabraniBuduciDatum">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li je zabranjen budući datum (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:ZabraniBuduciDatumSoapIn" />
+      <wsdl:output message="tns:ZabraniBuduciDatumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaDatum">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Tekst poruke za nevalidan datum (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:PorukaDatumSoapIn" />
+      <wsdl:output message="tns:PorukaDatumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DajSezonskaPravila">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vraća sezonska pravila za aktivnosti (lista sezona po tipId).</wsdl:documentation>
+      <wsdl:input message="tns:DajSezonskaPravilaSoapIn" />
+      <wsdl:output message="tns:DajSezonskaPravilaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MinimalnaPovrsina">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Minimalna površina za prijavu (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:MinimalnaPovrsinaSoapIn" />
+      <wsdl:output message="tns:MinimalnaPovrsinaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DozvoliPreklapanje">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li je dozvoljeno preklapanje površina (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:DozvoliPreklapanjeSoapIn" />
+      <wsdl:output message="tns:DozvoliPreklapanjeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaPreklapanje">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Poruka greške vezana za preklapanje/površinu (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:PorukaPreklapanjeSoapIn" />
+      <wsdl:output message="tns:PorukaPreklapanjeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FullAmountRequiresAll">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li je za pun iznos potrebno da SVE obavezne aktivnosti budu urađene (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:FullAmountRequiresAllSoapIn" />
+      <wsdl:output message="tns:FullAmountRequiresAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObavezneAktivnosti">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vraća listu obaveznih aktivnosti (tipId + naziv) iz XML-a.</wsdl:documentation>
+      <wsdl:input message="tns:ObavezneAktivnostiSoapIn" />
+      <wsdl:output message="tns:ObavezneAktivnostiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelimicnoOdobrenjeDozvoljeno">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Da li je dozvoljeno delimično odobrenje iznosa (iz XML-a).</wsdl:documentation>
+      <wsdl:input message="tns:DelimicnoOdobrenjeDozvoljenoSoapIn" />
+      <wsdl:output message="tns:DelimicnoOdobrenjeDozvoljenoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelimicnoOdobrenjeNacin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Način delimičnog odobrenja (npr. PoProcentu).</wsdl:documentation>
+      <wsdl:input message="tns:DelimicnoOdobrenjeNacinSoapIn" />
+      <wsdl:output message="tns:DelimicnoOdobrenjeNacinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcenatPoAktivnosti">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Procenat po aktivnosti za delimično odobrenje (npr. 0.25).</wsdl:documentation>
+      <wsdl:input message="tns:ProcenatPoAktivnostiSoapIn" />
+      <wsdl:output message="tns:ProcenatPoAktivnostiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PorukaAkoNijePuno">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Poruka koja se prikazuje kada nisu ispunjene sve obavezne aktivnosti.</wsdl:documentation>
+      <wsdl:input message="tns:PorukaAkoNijePunoSoapIn" />
+      <wsdl:output message="tns:PorukaAkoNijePunoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OgranicenjaServisSoap" type="tns:OgranicenjaServisSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpisObavezan">
+      <soap:operation soapAction="http://tvojprojekat.rs/OpisObavezan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaOpis">
+      <soap:operation soapAction="http://tvojprojekat.rs/PorukaOpis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZabraniBuduciDatum">
+      <soap:operation soapAction="http://tvojprojekat.rs/ZabraniBuduciDatum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaDatum">
+      <soap:operation soapAction="http://tvojprojekat.rs/PorukaDatum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DajSezonskaPravila">
+      <soap:operation soapAction="http://tvojprojekat.rs/DajSezonskaPravila" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MinimalnaPovrsina">
+      <soap:operation soapAction="http://tvojprojekat.rs/MinimalnaPovrsina" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DozvoliPreklapanje">
+      <soap:operation soapAction="http://tvojprojekat.rs/DozvoliPreklapanje" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaPreklapanje">
+      <soap:operation soapAction="http://tvojprojekat.rs/PorukaPreklapanje" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FullAmountRequiresAll">
+      <soap:operation soapAction="http://tvojprojekat.rs/FullAmountRequiresAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObavezneAktivnosti">
+      <soap:operation soapAction="http://tvojprojekat.rs/ObavezneAktivnosti" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelimicnoOdobrenjeDozvoljeno">
+      <soap:operation soapAction="http://tvojprojekat.rs/DelimicnoOdobrenjeDozvoljeno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelimicnoOdobrenjeNacin">
+      <soap:operation soapAction="http://tvojprojekat.rs/DelimicnoOdobrenjeNacin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcenatPoAktivnosti">
+      <soap:operation soapAction="http://tvojprojekat.rs/ProcenatPoAktivnosti" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaAkoNijePuno">
+      <soap:operation soapAction="http://tvojprojekat.rs/PorukaAkoNijePuno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OgranicenjaServisSoap12" type="tns:OgranicenjaServisSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpisObavezan">
+      <soap12:operation soapAction="http://tvojprojekat.rs/OpisObavezan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaOpis">
+      <soap12:operation soapAction="http://tvojprojekat.rs/PorukaOpis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZabraniBuduciDatum">
+      <soap12:operation soapAction="http://tvojprojekat.rs/ZabraniBuduciDatum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaDatum">
+      <soap12:operation soapAction="http://tvojprojekat.rs/PorukaDatum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DajSezonskaPravila">
+      <soap12:operation soapAction="http://tvojprojekat.rs/DajSezonskaPravila" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MinimalnaPovrsina">
+      <soap12:operation soapAction="http://tvojprojekat.rs/MinimalnaPovrsina" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DozvoliPreklapanje">
+      <soap12:operation soapAction="http://tvojprojekat.rs/DozvoliPreklapanje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaPreklapanje">
+      <soap12:operation soapAction="http://tvojprojekat.rs/PorukaPreklapanje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FullAmountRequiresAll">
+      <soap12:operation soapAction="http://tvojprojekat.rs/FullAmountRequiresAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObavezneAktivnosti">
+      <soap12:operation soapAction="http://tvojprojekat.rs/ObavezneAktivnosti" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelimicnoOdobrenjeDozvoljeno">
+      <soap12:operation soapAction="http://tvojprojekat.rs/DelimicnoOdobrenjeDozvoljeno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelimicnoOdobrenjeNacin">
+      <soap12:operation soapAction="http://tvojprojekat.rs/DelimicnoOdobrenjeNacin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcenatPoAktivnosti">
+      <soap12:operation soapAction="http://tvojprojekat.rs/ProcenatPoAktivnosti" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PorukaAkoNijePuno">
+      <soap12:operation soapAction="http://tvojprojekat.rs/PorukaAkoNijePuno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OgranicenjaServis">
+    <wsdl:port name="OgranicenjaServisSoap" binding="tns:OgranicenjaServisSoap">
+      <soap:address location="https://localhost:44388/OgranicenjaServis.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OgranicenjaServisSoap12" binding="tns:OgranicenjaServisSoap12">
+      <soap12:address location="https://localhost:44388/OgranicenjaServis.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

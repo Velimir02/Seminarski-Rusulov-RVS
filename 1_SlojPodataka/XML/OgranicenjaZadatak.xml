@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Ogranicenja>
+  
+  <EvidencijaRada>
+    <OcenaMin>1</OcenaMin>
+    <OcenaMax>5</OcenaMax>
+    <PorukaOcena>Ocena mora biti u rasponu od 1 do 5.</PorukaOcena>
+    
+    <ZabraniBuduciDatum>true</ZabraniBuduciDatum>
+    <PorukaDatum>Datum unosa evidencije ne može biti u budućnosti.</PorukaDatum>
+    
+    <KomentarObavezanZaLoshuOcenu>true</KomentarObavezanZaLoshuOcenu>
+    <PragLoseOcene>2</PragLoseOcene>
+    <PorukaKomentar>Za ocene 1 i 2 morate uneti detaljan komentar i obrazloženje.</PorukaKomentar>
+
+    <PravilaOcenjivanja>
+      <Pravilo ocena="1" akcija="HR_Upozorenje">Kritičan nivo - obavezan razgovor sa HR sektorom i mentorom.</Pravilo>
+      <Pravilo ocena="2" akcija="Plan_Poboljsanja">Potreban rad na unapređenju veština - dodeliti lakše zadatke.</Pravilo>
+      <Pravilo ocena="3" akcija="Standard">Zadovoljava očekivanja firme.</Pravilo>
+      <Pravilo ocena="4" akcija="Pohvala">Radnik se ističe u radu i efikasnosti.</Pravilo>
+      <Pravilo ocena="5" akcija="Predlog_Bonus">Izvanredni rezultati - kandidat za novčani bonus ili unapređenje.</Pravilo>
+    </PravilaOcenjivanja>
+  </EvidencijaRada>
+
+  <Korisnik>
+    <MinDuzinaLozinke>8</MinDuzinaLozinke>
+    <PorukaLozinka>Lozinka mora sadržati najmanje 8 karaktera zbog bezbednosti podataka firme.</PorukaLozinka>
+    
+    <EmailObavezan>true</EmailObavezan>
+    <DozvoljenDomen>@firma.rs</DozvoljenDomen>
+    <PorukaEmail>Svi zaposleni moraju biti registrovani sa zvaničnim kompanijskim emailom (@firma.rs).</PorukaEmail>
+  </Korisnik>
+
+  <Kriterijum>
+    <MaxDuzinaNaziva>100</MaxDuzinaNaziva>
+    <OpisObavezan>false</OpisObavezan>
+    <PorukaNaziv>Naziv kriterijuma ne sme biti duži od 100 karaktera.</PorukaNaziv>
+  </Kriterijum>
+
+</Ogranicenja>

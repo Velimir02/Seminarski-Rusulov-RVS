@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{692B549F-F072-41EF-8F4E-4AA7356B61F8}|PrezentacionaLogika.csproj|c:\\users\\user\\desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_slojprezentacije\\prezentacionalogika\\formaloginklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B549F-F072-41EF-8F4E-4AA7356B61F8}|PrezentacionaLogika.csproj|solutionrelative:formaloginklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B549F-F072-41EF-8F4E-4AA7356B61F8}|PrezentacionaLogika.csproj|C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\formaevidencijaunosklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B549F-F072-41EF-8F4E-4AA7356B61F8}|PrezentacionaLogika.csproj|solutionrelative:formaevidencijaunosklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B549F-F072-41EF-8F4E-4AA7356B61F8}|PrezentacionaLogika.csproj|C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\formaevidencijastampaklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B549F-F072-41EF-8F4E-4AA7356B61F8}|PrezentacionaLogika.csproj|solutionrelative:formaevidencijastampaklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B549F-F072-41EF-8F4E-4AA7356B61F8}|PrezentacionaLogika.csproj|C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\formaevidencijaeditklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B549F-F072-41EF-8F4E-4AA7356B61F8}|PrezentacionaLogika.csproj|solutionrelative:formaevidencijaeditklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormaEvidencijaStampaKlasa.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\FormaEvidencijaStampaKlasa.cs",
+              "RelativeDocumentMoniker": "FormaEvidencijaStampaKlasa.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\FormaEvidencijaStampaKlasa.cs",
+              "RelativeToolTip": "FormaEvidencijaStampaKlasa.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwv3QAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T10:46:45.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormaEvidencijaEditKlasa.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\FormaEvidencijaEditKlasa.cs",
+              "RelativeDocumentMoniker": "FormaEvidencijaEditKlasa.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\FormaEvidencijaEditKlasa.cs",
+              "RelativeToolTip": "FormaEvidencijaEditKlasa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T10:46:34.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormaLoginKlasa.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\FormaLoginKlasa.cs",
+              "RelativeDocumentMoniker": "FormaLoginKlasa.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\FormaLoginKlasa.cs",
+              "RelativeToolTip": "FormaLoginKlasa.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv00AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T10:45:12.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormaEvidencijaUnosKlasa.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\FormaEvidencijaUnosKlasa.cs",
+              "RelativeDocumentMoniker": "FormaEvidencijaUnosKlasa.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\4_SlojPrezentacije\\PrezentacionaLogika\\FormaEvidencijaUnosKlasa.cs",
+              "RelativeToolTip": "FormaEvidencijaUnosKlasa.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv0wAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T10:46:21.77Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

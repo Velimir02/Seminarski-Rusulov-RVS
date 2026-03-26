@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\rasa\\2_SlojPoslovneLogike\\PoslovnaLogika\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6869D3-40E8-4C04-B973-5395233E640E}|PoslovnaLogika.csproj|c:\\users\\user\\desktop\\rasa\\2_slojposlovnelogike\\poslovnalogika\\evidencijaradaposlovnalogika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6869D3-40E8-4C04-B973-5395233E640E}|PoslovnaLogika.csproj|solutionrelative:evidencijaradaposlovnalogika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EvidencijaRadaPoslovnaLogika.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\rasa\\2_SlojPoslovneLogike\\PoslovnaLogika\\EvidencijaRadaPoslovnaLogika.cs",
+              "RelativeDocumentMoniker": "EvidencijaRadaPoslovnaLogika.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\rasa\\2_SlojPoslovneLogike\\PoslovnaLogika\\EvidencijaRadaPoslovnaLogika.cs",
+              "RelativeToolTip": "EvidencijaRadaPoslovnaLogika.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T12:25:27.998Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

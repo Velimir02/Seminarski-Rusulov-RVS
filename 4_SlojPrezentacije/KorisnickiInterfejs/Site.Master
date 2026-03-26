@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="KorisnickiInterfejs.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="sr">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - Nexus HR System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        /* --- MODERN ENTERPRISE TEMA --- */
+        :root {
+            --brand-color: #4f46e5;    /* Deep Indigo */
+            --accent-color: #14b8a6;   /* Soft Teal */
+            --bg-body: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+        }
+
+        .navbar-custom {
+            background: linear-gradient(135deg, var(--brand-color), #4338ca);
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: white !important;
+        }
+
+        .navbar-brand span { color: var(--accent-color); }
+
+        .nav-link {
+            color: rgba(255,255,255,0.9) !important;
+            padding: 0.5rem 1rem !important;
+            border-radius: 6px;
+        }
+
+        .nav-link:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .main-wrapper {
+            background: white;
+            padding: 2.5rem;
+            margin-top: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+
+        footer {
+            padding: 2rem 0;
+            margin-top: 3rem;
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+        }
+
+        /* Hover efekat za tabele i kartice */
+        .card { border-radius: 12px !important; border: none !important; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05) !important; }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server" />
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" runat="server" href="~/Pocetna.aspx">
+                    <i class="fas fa-chart-line"></i> NEXUS<span>HR</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto ms-4">
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Pocetna.aspx"><i class="fas fa-dashboard me-1"></i> Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/EvidencijaUnos.aspx"><i class="fas fa-plus me-1"></i> Nova Ocena</a></li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item text-white me-3 opacity-75">
+                            <i class="fas fa-user-circle"></i> <%: Session["KorisnikImePrezime"] %>
+                        </li>
+                        <li class="nav-item">
+                             <asp:LinkButton ID="btnOdjava" runat="server" OnClick="btnOdjava_Click" CssClass="nav-link btn btn-outline-light border-0">
+                                <i class="fas fa-right-from-bracket"></i> Odjava
+                             </asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container main-wrapper">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <footer class="text-center">
+            <div class="container">
+                <p>&copy; <%: DateTime.Now.Year %> Nexus Technologies. Sva prava zadržana.</p>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

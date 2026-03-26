@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Games\\SeminarskiMajkic\\Seminarski\\1_SlojPodataka\\TehnoloskeKlase\\DBUtils\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FC63C0-C778-4586-A1D2-EDF44E6A9605}|DBUtils.csproj|d:\\games\\seminarskimajkic\\seminarski\\1_slojpodataka\\tehnoloskeklase\\dbutils\\tabelaklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0FC63C0-C778-4586-A1D2-EDF44E6A9605}|DBUtils.csproj|solutionrelative:tabelaklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0FC63C0-C778-4586-A1D2-EDF44E6A9605}|DBUtils.csproj|D:\\Games\\SeminarskiMajkic\\Seminarski\\1_SlojPodataka\\TehnoloskeKlase\\DBUtils\\konekcijaklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0FC63C0-C778-4586-A1D2-EDF44E6A9605}|DBUtils.csproj|solutionrelative:konekcijaklasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TabelaKlasa.cs",
+              "DocumentMoniker": "D:\\Games\\SeminarskiMajkic\\Seminarski\\1_SlojPodataka\\TehnoloskeKlase\\DBUtils\\TabelaKlasa.cs",
+              "RelativeDocumentMoniker": "TabelaKlasa.cs",
+              "ToolTip": "D:\\Games\\SeminarskiMajkic\\Seminarski\\1_SlojPodataka\\TehnoloskeKlase\\DBUtils\\TabelaKlasa.cs",
+              "RelativeToolTip": "TabelaKlasa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T10:00:11.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KonekcijaKlasa.cs",
+              "DocumentMoniker": "D:\\Games\\SeminarskiMajkic\\Seminarski\\1_SlojPodataka\\TehnoloskeKlase\\DBUtils\\KonekcijaKlasa.cs",
+              "RelativeDocumentMoniker": "KonekcijaKlasa.cs",
+              "ToolTip": "D:\\Games\\SeminarskiMajkic\\Seminarski\\1_SlojPodataka\\TehnoloskeKlase\\DBUtils\\KonekcijaKlasa.cs",
+              "RelativeToolTip": "KonekcijaKlasa.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAswIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T09:59:40.284Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
