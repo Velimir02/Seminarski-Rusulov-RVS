@@ -1,24 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\",
+  "WorkspaceRootPath": "C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|c:\\users\\user\\desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_slojwebservisa\\webservis\\ogranicenjaservis.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|c:\\users\\velim\\downloads\\seminarski rusulov\\3_slojwebservisa\\webservis\\ogranicenjaservis.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|solutionrelative:ogranicenjaservis.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\xml\\ogranicenja.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|solutionrelative:xml\\ogranicenja.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|solutionrelative:global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Games\\SeminarskiMajkic\\Seminarski\\3_SlojWebServisa\\WebServis\\XML\\OgranicenjaPrijavaZaPodsticaj.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Games\\SeminarskiMajkic\\Seminarski\\3_SlojWebServisa\\WebServis\\XML\\OgranicenjaAktivnost.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\xml\\ogranicenja.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1EA36CFC-7CAA-4AC8-BC25-2F839BAF03A9}|WebServis.csproj|solutionrelative:xml\\ogranicenja.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,15 +22,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ogranicenja.xml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\XML\\Ogranicenja.xml",
+              "DocumentMoniker": "C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\XML\\Ogranicenja.xml",
               "RelativeDocumentMoniker": "XML\\Ogranicenja.xml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\XML\\Ogranicenja.xml",
+              "ToolTip": "C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\XML\\Ogranicenja.xml",
               "RelativeToolTip": "XML\\Ogranicenja.xml",
               "ViewState": "AgIAABkAAAAAAAAAAAAvwCcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
@@ -44,21 +38,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OgranicenjaPrijavaZaPodsticaj.xml",
-              "DocumentMoniker": "D:\\Games\\SeminarskiMajkic\\Seminarski\\3_SlojWebServisa\\WebServis\\XML\\OgranicenjaPrijavaZaPodsticaj.xml",
-              "ToolTip": "D:\\Games\\SeminarskiMajkic\\Seminarski\\3_SlojWebServisa\\WebServis\\XML\\OgranicenjaPrijavaZaPodsticaj.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-07-19T14:54:42.627Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "OgranicenjaServis.asmx.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\OgranicenjaServis.asmx.cs",
+              "DocumentMoniker": "C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\OgranicenjaServis.asmx.cs",
               "RelativeDocumentMoniker": "OgranicenjaServis.asmx.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\OgranicenjaServis.asmx.cs",
+              "ToolTip": "C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\OgranicenjaServis.asmx.cs",
               "RelativeToolTip": "OgranicenjaServis.asmx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -67,21 +51,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OgranicenjaAktivnost.xml",
-              "DocumentMoniker": "D:\\Games\\SeminarskiMajkic\\Seminarski\\3_SlojWebServisa\\WebServis\\XML\\OgranicenjaAktivnost.xml",
-              "ToolTip": "D:\\Games\\SeminarskiMajkic\\Seminarski\\3_SlojWebServisa\\WebServis\\XML\\OgranicenjaAktivnost.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-07-19T14:54:28.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\Global.asax.cs",
               "RelativeDocumentMoniker": "Global.asax.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\veb aplikacija za pra\u0107enje kvaliteta rada zaposlenih\\3_SlojWebServisa\\WebServis\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\velim\\Downloads\\Seminarski Rusulov\\3_SlojWebServisa\\WebServis\\Global.asax.cs",
               "RelativeToolTip": "Global.asax.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
